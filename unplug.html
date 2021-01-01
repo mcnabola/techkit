@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TechKit</title>
+</head>
+
+<h2>Tech Kit - UL Compsoc - 2020/21 Semester 2</h2>
+<p>How do I disconnect the ESP8266 board from my computer. Can I just unplug it or do I have to safely eject it like I do a USB stick. Thankfully the answer is NO you do not need to safely eject the ESP.</p>
+
+<p>https://arduino.stackexchange.com/questions/4769/can-i-simply-unplug-the-arduino-usb-if-serial-communication-is-active Even if I am uploading a sketch over serial? No there is no issue Microcontrollers are good at abruptly stopping and starting.</p>
+
+<p>As long as it is not writing to EEPROM or Flashing something it should not corrupt something generally.(Does the arduino IDE flash stuff onto the board?) It is best not to disturb it as it is uploading a sketch but after it is finished it should be fine to unplug.</p>
+
+<p>One more tip I found, its probably not relevent for us but ill mention it anyway, the chances are tiny but theres chance of static electricity on your hand so Tap your fingers on your computer case(if metal) just for good measure. If you have a laptop, the monitor socket etc. - power coming out from USB and power transferring to your hands. <a href="https://forum.arduino.cc/index.php?topic=289897.0"></a>source</p>
+
+
+</html>
