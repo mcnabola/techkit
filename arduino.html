@@ -18,5 +18,18 @@ pacman -S arduino , for Arch or Manjaro Systems.
 sudo pacman -S arduino-avr-core (download this too)
 </p>
 
+<h2>Hello, World!</h2>
+<p>After you get the arduino ide installed and opened, you can now start preparing the IDE to work with the ESP. By default it doesnt work with ESP's as it was originally built for Arduinos but the software eventually transformed to work with ESP's too.<p>
+
+<p>What do you gotta do? Change the board manager preferences to allow other boards to work. Select one of those other boards. Change the default bord you are working with and finally for me, I selected the serial port I wanted to send data over.</p>
+
+<ol>
+	<li>File>Preferences>Copy "http://arduino.esp8266.com/stable/package_esp8266com_index.json" into the 'Additional board managers URLs.>click OK</li>
+	<li>Tools>Board>click the arrow>Boards Manager>Search>"ESP8">ESP8266 should show up>click INSTALL</li>
+	<li>Tools>Board>Generic ESP8266 board</li>
+	<li>Tools>Port> any of the options that have the word "usb" in them.</li>
+</ol>
+
+<p>For the last step of the process you need to have drivers for the serial port connention or for linux users add your user to 2 user groups.<a href="https://boseji.com/posts/esp8266-flashing-in-linux/">Good resource for Linux</a><p>
 
 </html>
